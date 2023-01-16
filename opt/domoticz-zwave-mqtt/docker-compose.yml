@@ -3,6 +3,7 @@ services:
   mosquitto:
     container_name: mosquitto
     image: eclipse-mosquitto
+    restart: always
     volumes:
       - ./mosquitto-config:/mosquitto/:rw
     ports:
@@ -41,7 +42,7 @@ services:
   domoticz:
     image: domoticz/domoticz
     container_name: domoticz
-    restart: unless-stopped
+    restart: always
 
     ports:
       - "8080:8080"
