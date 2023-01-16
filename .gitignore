@@ -1,0 +1,10 @@
+.idea
+
+password.txt
+domoticz.db
+
+nodes.json
+users.json
+*.lock
+.config-db/
+*.jsonl
